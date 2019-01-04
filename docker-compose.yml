@@ -1,0 +1,10 @@
+version: "2"
+services:
+  notebook:
+    image: jupyter/datascience-notebook
+    restart: always
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/home/jovyan
+    container_name: notebook-container
