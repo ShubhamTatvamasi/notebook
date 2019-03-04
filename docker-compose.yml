@@ -1,10 +1,10 @@
 version: "2"
 services:
   notebook:
+    container_name: minimal-notebook
     image: jupyter/minimal-notebook
     restart: always
     ports:
       - "8888:8888"
     volumes:
       - ./work/:/home/jovyan
-    container_name: notebook-container
